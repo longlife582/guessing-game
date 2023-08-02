@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 80vh;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div h1 {
+  color: #000;
+  font-family: Josefin Sans;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  height: 10px;
+}
+
+.div p {
+  color: rgba(14, 13, 13, 0.78);
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 10px;
+  text-transform: capitalize;
+}
+
+.div h2 {
+  color: #000;
+  font-family: Josefin Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 10px;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+input {
+  width: 20%;
+  padding: 10px 10px;
+  /* overflow: hidden; */
+  outline: none;
+  
+}
+
+button {
+  padding: 10px 30px;
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 6px;
+  /* border: 1px solid rgba(26, 22, 198, 0.82); */
+  border: none;
+  background: #4f779d;
+  text-transform: capitalize;
+  
+}
+
+.message{
+    color: red;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 6px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    transition:  8s;
+}
+
+.hint{
+    color: rgb(38, 0, 255);
+    font-family: Josefin Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 6px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    transition:  8s;
+}
+
+.owner{
+    color: #000;
+    font-family: Josefin Sans;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 500px) {
+
+    input{
+        width: 60%;
+    }
+
+    .message{
+        font-size: 12px;
+        padding-left: 30px;
+        /* width: 100%; */
+    }
+}
